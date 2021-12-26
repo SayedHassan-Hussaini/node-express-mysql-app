@@ -1,23 +1,26 @@
-const express =require('express');
-const mysql =require('mysql');
-
+const mysql = require('mysql');
 var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'node_db'
-  })
-  connection.connect()
-  // .then(()=>console.log("connected to db"))
-  // .catch(err=>console.log("error",err))
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'node_db'
+})
+connection.connect()
 
-  const getAll=(req,res)=>{
-    connection.query('SELECT * FROM user', (err, rows, fields) => {
-        if (err) throw res.send("err:" + err)
-        else if (rows) { throw res.send("result:" + JSON.stringify(rows))}
-         else if (fields) throw res.send("feilds:" + fields)
+const getAll = async() => {
+  try {
+     const response =await new Promise((resolve,reject)=>{
+      connection.query('SELECT * FROM user', (err, rows, fields) => {
+        if (err) reject (new Error(err.message))
+        else if (rows) resolve (JSON.stringify(rows))
+        else if (fields) reject ("feilds:" +new Error(err.message))
+      })
      })
+     connection.end()
+     return response
+  } catch (err) {
+    console.log(err)
+    connection.end()
   }
-  connection.end()
-  module.exports = getAll;
-  
+}
+exports.getAll = getAll;

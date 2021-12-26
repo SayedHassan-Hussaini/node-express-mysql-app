@@ -4,6 +4,8 @@ const {getAll}=require('../models/user')
 // const mysql=require('mysql')
 
 router.get('/',async(req,res)=>{
+   res.send("response "+ await getAll())
+})
     // var connection = mysql.createConnection({
     //     host: 'localhost',
     //     user: 'root',
@@ -17,8 +19,8 @@ router.get('/',async(req,res)=>{
     //      else if (fields) throw res.send("feilds:" + fields)
     //  })
     //  connection.end()
-    res.send(getAll())
-})
+    // res.send(getAll)
+
 router.get('/all',async(req,res)=>{
     res.sendStatus('200')
     res.send("get all user")
