@@ -13,7 +13,7 @@ const getAll = async() => {
       connection.query('SELECT * FROM user', (err, rows, fields) => {
         if (err) reject (new Error(err.message))
         else if (rows) resolve (JSON.stringify(rows))
-        else if (fields) reject ("feilds:" +new Error(err.message))
+        else if (fields) reject ("feilds:" + new Error(err.message))
       })
      })
      connection.end()
