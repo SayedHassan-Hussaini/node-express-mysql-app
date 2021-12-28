@@ -1,8 +1,11 @@
 const config = require('config')
-const mysql = require('mysql')
 const express = require('express')
 const morgan = require('morgan')
 //
+if(!config.get('jwtPrivateKey')){
+console.log("Erroe: jwtPrivateKey is not set!")
+process.exit(1)
+}
 const auth=require('./routes/auth')
 const users =require('./routes/user')
 const app = express()
