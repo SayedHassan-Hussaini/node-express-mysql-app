@@ -1,18 +1,18 @@
 # Setup node and Express with mysql
 ________________________________________________________
-# <h4>API</h4>
- # Register User api----> /api/auth/register
+# <h3>API</h3>
+ # <h4>Register User api----> /api/auth/register</h4>
       paramer
       firstname
       lastname
       email
       password
    
- # Login User api----> /api/auth
+ # <h4>Login User api----> /api/auth</h4>
       email
       password
- # Get all User api----> /api/user
+ # <h4>Get all User api----> /api/user</h4>
  ______________________________________________________
- # JWt package use for create token
- # Joi package use for validation in input
+ # <h5>JWt package use for create token</h5>
+ # <h5>Joi package use for validation in input</h5>
   
