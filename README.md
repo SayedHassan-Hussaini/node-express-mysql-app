@@ -13,6 +13,6 @@ ________________________________________________________
       password
  # Get all User api----> /api/user
  ______________________________________________________
- JWt package use for create token
- Joi package use for validation in input
+ # JWt package use for create token
+ # Joi package use for validation in input
   
