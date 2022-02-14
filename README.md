@@ -1,6 +1,6 @@
 # Setup node and Express with mysql
 ________________________________________________________
-# <h4>API</h4
+# <h4>API</h4>
  # Register User api----> /api/auth/register
       paramer
       firstname
