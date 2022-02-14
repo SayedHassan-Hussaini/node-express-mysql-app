@@ -1,6 +1,6 @@
 # Setup node and espress with mysql
 ________________________________________________________
-           #<h1>Api</h1>
+# API
  # Register User api----> /api/auth/register
       paramer
       firstname
@@ -13,4 +13,6 @@ ________________________________________________________
       password
  # Get all User api----> /api/user
  ______________________________________________________
+ JWt package use for create token
+ Joi package use for validation in input
   
