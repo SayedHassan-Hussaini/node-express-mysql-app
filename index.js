@@ -19,14 +19,6 @@ app.get('/', (req, res) => {
 })
 app.use('/api/auth',auth)
 app.use('/api/user',users)
-//configration
-// if (app.get('env') === 'development') {
-//    app.use(morgan('tiny'))
-// }
-//
-app.get('/api/list', (req, res) => {
-   res.send([1, 2, 3, 4])
-})
 
 app.get('/api/user')
 app.listen(4000, () => console.log("app start.."))
