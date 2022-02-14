@@ -1,7 +1,7 @@
 # node-mysql-app
 # Setup node and espress with mysql
 <h1>Api</h1>
-# Register User api----> /api/auth/register
+ # Register User api----> /api/auth/register
       # paramer
       # firstname
       # lastname
