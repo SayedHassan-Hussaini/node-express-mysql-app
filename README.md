@@ -1,5 +1,6 @@
 # Setup node and espress with mysql
-           <h1>Api</h1>
+________________________________________________________
+           #<h1>Api</h1>
  # Register User api----> /api/auth/register
       paramer
       firstname
@@ -8,7 +9,8 @@
       password
    
  # Login User api----> /api/auth
-      # email
-      # password
+      email
+      password
  # Get all User api----> /api/user
+ ______________________________________________________
   
