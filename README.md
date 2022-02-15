@@ -2,7 +2,6 @@
 ________________________________________________________
 # <h3>API</h3>
  # <h4>Register User api----> /api/auth/register</h4>
-      paramer
       firstname
       lastname
       email
