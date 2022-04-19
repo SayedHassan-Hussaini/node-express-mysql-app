@@ -11,6 +11,7 @@ ________________________________________________________
       email
       password
  # <h4>Get all User api----> /api/user</h4>
+ 
  ______________________________________________________
  # <h5> JWt package use for create token </h5>
  # <h5> Joi package use for validation in input </h5>
