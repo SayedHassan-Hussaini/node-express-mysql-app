@@ -14,6 +14,6 @@ __________________________________________________________
  
  ______________________________________________________
  # <h5> JWt package use for create token </h5>
- # <h5> Joi package use for validation in input </h5>
+ # <h5> Joi package  use for validation in input </h5>
  
 
